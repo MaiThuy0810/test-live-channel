@@ -1,0 +1,14 @@
+@import "sass-rem";
+
+.breadcrumb {
+  .MuiBreadcrumbs-ol {
+    .MuiBreadcrumbs-separator {
+      svg {
+        width: rem-convert(12px);
+      }
+    }
+    .MuiBreadcrumbs-li:not(:last-child):hover {
+      opacity: 0.8;
+    }
+  }
+}

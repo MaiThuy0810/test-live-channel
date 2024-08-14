@@ -1,0 +1,64 @@
+.input_phone_wrapper {
+  .MuiFormControl-root {
+    width: fit-content;
+  }
+  .MuiOutlinedInput-root {
+    background: white !important;
+    border: 1px solid black;
+  }
+  .order-list{
+    h2{
+      color: black;
+      font-weight: bold;
+    }
+    .level1 {
+      color: black;
+      border: 1px solid rgba(128, 128, 128, 0.307);
+      width: fit-content;
+      padding: 20px 20px;
+        counter-reset: level1; 
+        list-style-type: none;
+      }
+      
+      .level1 > li {
+        counter-increment: level1; 
+      }
+      
+      .level1 > li::before {
+        content: counter(level1) ". "; 
+        color: #f44336 ; 
+        ;
+      }
+      
+      .level2 {
+        padding: 0px 40px;
+        counter-reset: level2; 
+        list-style-type: none;
+      }
+      
+      .level2 > li {
+        counter-increment: level2; 
+      }
+      
+      .level2 > li::before {
+        content: counter(level1) "." counter(level2) " "; 
+        color: #f44336 ; 
+      }
+      
+      .level3 {
+        padding: 0px 30px;
+        counter-reset: level3; 
+        list-style-type: none;
+      }
+      
+      .level3 > li {
+        counter-increment: level3;
+      }
+      
+      .level3 > li::before {
+        color: #f44336 ; 
+
+        content: counter(level1) "." counter(level2) "." counter(level3) " "; 
+      }
+  }
+}

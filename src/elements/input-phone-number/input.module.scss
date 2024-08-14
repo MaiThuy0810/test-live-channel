@@ -1,0 +1,25 @@
+@import 'sass-rem';
+
+.form_control {
+  .input_label {
+    position: unset;
+    transform: unset;
+    transition: unset;
+    margin-bottom: rem-convert(10px);
+  }
+  .input_custom {
+    @include rem-convert(
+      (
+        border: 1px solid transparent
+      )
+    );
+  }
+  fieldset {
+    border: 0;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
